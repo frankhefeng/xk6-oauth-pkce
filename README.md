@@ -1,4 +1,4 @@
-# k6-oauth-pkce
+# xk6-oauth-pkce
 `xk6-oauth-pkce` is a [k6](https://go.k6.io/k6) [extension](https://github.com/grafana/xk6) provides capability to generate [OAuth PKCE](https://datatracker.ietf.org/doc/html/rfc7636) code verifier and code challenge.
 
 ## Build
