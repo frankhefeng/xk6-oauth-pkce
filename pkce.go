@@ -18,7 +18,7 @@ const (
 	CodeChallengeS256                      = "S256"
 )
 
-const CodeVerifierLength = 64 //43~128 https://datatracker.ietf.org/doc/html/rfc7636#section-4.1
+const CodeVerifierLength = 64 // 43~128 https://datatracker.ietf.org/doc/html/rfc7636#section-4.1
 
 type (
 	// RootModule is the global module instance that will create module
@@ -93,7 +93,7 @@ func (m *OAuthPkceModule) Create(method CodeChallengeMethod) *CodeVerifier {
 }
 
 func (m *OAuthPkceModule) generateCodeVerifier(length int) string {
-	var charset = []rune("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789")
+	charset := []rune("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789")
 	charsetLength := len(charset)
 	b := make([]rune, length)
 	for i := range b {
